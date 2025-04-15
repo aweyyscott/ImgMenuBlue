@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Imagem Viewer</title>
+  <style>
+    html, body {
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <img src="" id="mainImg" style="width:100vw; height:100vh; object-fit:cover;">
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('background_blue')) {
+      document.getElementById('mainImg').src = 'background_blue.png';
+    }
+  </script>
+</body>
+</html>
